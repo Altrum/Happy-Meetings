@@ -28,15 +28,40 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
+    <!-- Getting Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- JQUERY AND TYPED JS-->
+    <script src="jquery.js"></script>
+    <script src="typed.js"></script>
+
+
+<div class="element"></div>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+    $(document).ready(function(){
+      $('.site-wrapper').fadeIn(3000);
+      $('.site-wrapper').css("display", "table");
+    });
+    </script>
+
+    <script>
+      $(function(){
+        $(".lead").typed({
+          strings: ["First sentence.", "Second sentence."],
+          typeSpeed: 0
+        });
+      });
+    </script>
+
+</script>
   </head>
 
   <body>
-
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -60,7 +85,7 @@
             <p class="lead">We make meetings more <b><i>efficient</i></b> for your company or organization.</p>
             <p class="inner_buttons">
               <a href="#Signup"><button type="button" 
-                class="btn btn-primary btn-lg">Sign Up</button></a>
+                class="btn btn-primary btn-lg">Let's get started</button></a>
               <a href="#Login"><button type="button" 
                 class="btn btn-primary btn-lg">Login</button></a>
             </p>
